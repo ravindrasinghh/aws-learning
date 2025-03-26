@@ -24,21 +24,23 @@ This guide includes:
 ```bash
 aws configure
 # Enter Access Key, Secret, region (e.g., ap-south-1), and output format (json)
+```
+---
 
 ###  3. Verify Access (Try Listing Buckets)
-```
+``` bash
 aws s3 ls
 ```
-
-# 🌥️ 🌐 Hosting a Website with NGINX (Amazon Linux EC2)
+---
+### 🌥️ 🌐 Hosting a Website with NGINX (Amazon Linux EC2)
 
 ###  📜 User Data Script (install NGINX + host site)
  -🪄 EC2 Launch Steps:
 - Amazon Linux 2
 - t2.micro (Free Tier)
- -Security Group: Allow Port 22 (SSH) & 80 (HTTP)
+- Security Group: Allow Port 22 (SSH) & 80 (HTTP)
 
-```
+``` bash
 #!/bin/bash
 yum update -y
 amazon-linux-extras install nginx1 -y
@@ -47,18 +49,19 @@ systemctl enable nginx
 echo "<h1>Hello from NGINX on AWS EC2</h1>" > /usr/share/nginx/html/index.html
 ```
 
-### ➡️ Access site using Public IP in browser.
 
 ➡️ Access site using Public IP in browser.
+---
 
-# 🪟 Hosting a Website on IIS (Windows EC2)
+### 🪟 Hosting a Website on IIS (Windows EC2)
 🪄 EC2 Launch Steps:
 - Choose Windows Server 2019/2022 Base
 - t2.micro
 - Security Group: Allow RDP (3389) & HTTP (80)
 
 - 📜 PowerShell Script (for User Data or Run Manually)
-```
+
+```bash
 Install-WindowsFeature -name Web-Server -IncludeManagementTools
 Set-Content -Path "C:\inetpub\wwwroot\index.html" -Value "<h1>Hello from IIS on Windows EC2</h1>"
 ➡️ RDP into the instance and open http://<Public-IP> to view the site.
