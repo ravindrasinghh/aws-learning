@@ -45,6 +45,7 @@ amazon-linux-extras install nginx1 -y
 systemctl start nginx
 systemctl enable nginx
 echo "<h1>Hello from NGINX on AWS EC2</h1>" > /usr/share/nginx/html/index.html
+```
 
 ### ➡️ Access site using Public IP in browser.
 
