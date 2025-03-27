@@ -34,19 +34,17 @@ aws s3 ls
 ---
 ### 🌥️ 🌐 Hosting a Website with NGINX (Amazon Linux EC2)
 
-###  📜 User Data Script (install NGINX + host site)
  -🪄 EC2 Launch Steps:
 - Amazon Linux 2
 - t2.micro (Free Tier)
 - Security Group: Allow Port 22 (SSH) & 80 (HTTP)
 
 ``` bash
-#!/bin/bash
-yum update -y
-amazon-linux-extras install nginx1 -y
-systemctl start nginx
-systemctl enable nginx
-echo "<h1>Hello from NGINX on AWS EC2</h1>" > /usr/share/nginx/html/index.html
+sudo apt update
+sudo apt install nginx -y
+cd /var/www/html/
+touch index.html > Welcome to the World
+sudo systemctl restart nginx
 ```
 
 
