@@ -56,7 +56,8 @@ https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 ``` bash
 aws s3 ls --region us-east-1
 ```
-###  Mounting a New Data Disk (EBS Volume) in EC2
+---
+# Mounting a New Data Disk (EBS Volume) in EC2
 
 sudo lsblk -f
 ### Create a filesystem on the new disk (if it's empty)
@@ -77,6 +78,7 @@ sudo blkid /dev/xvdf
 sudo nano /etc/fstab
 UUID=abc123-xyz /mnt/data ext4 defaults,nofail 0 2
 
+---
 ### 🪟 Hosting a Website on IIS (Windows EC2)
 🪄 EC2 Launch Steps:
 - Choose Windows Server 2019/2022 Base
