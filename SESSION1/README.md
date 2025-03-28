@@ -32,7 +32,7 @@ aws configure
 aws s3 ls
 ```
 ---
-### 🌥️ 🌐 Hosting a Website with NGINX (Amazon Linux EC2)
+### 4. 🌥️ 🌐 Hosting a Website with NGINX (Amazon Linux EC2)
 
  -🪄 EC2 Launch Steps:
 - Amazon Linux 2
@@ -57,7 +57,7 @@ https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 aws s3 ls --region us-east-1
 ```
 ---
-# Mounting a New Data Disk (EBS Volume) in EC2
+# 5. Mounting a New Data Disk (EBS Volume) in EC2
 
 sudo lsblk -f
 ### Create a filesystem on the new disk (if it's empty)
@@ -79,7 +79,7 @@ sudo nano /etc/fstab
 UUID=abc123-xyz /mnt/data ext4 defaults,nofail 0 2
 
 ---
-### 🪟 Hosting a Website on IIS (Windows EC2)
+### 6. 🪟 Hosting a Website on IIS (Windows EC2)
 🪄 EC2 Launch Steps:
 - Choose Windows Server 2019/2022 Base
 - t2.micro
