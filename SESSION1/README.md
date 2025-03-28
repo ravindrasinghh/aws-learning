@@ -53,6 +53,10 @@ sudo systemctl restart nginx
 ### Here are the step-by-step instructions to install AWS CLI on Ubuntu
 https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 
+``` bash
+aws s3 ls --region us-east-1
+```
+
 ### 🪟 Hosting a Website on IIS (Windows EC2)
 🪄 EC2 Launch Steps:
 - Choose Windows Server 2019/2022 Base
