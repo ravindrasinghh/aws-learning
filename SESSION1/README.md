@@ -51,11 +51,7 @@ sudo systemctl restart nginx
 ➡️ Access site using Public IP in browser.
 ---
 ### Here are the step-by-step instructions to install AWS CLI on Ubuntu
-``` bash
-sudo apt-get update
-sudo apt-get install python3-pip
-sudo pip install awscli
-```
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 
 ### 🪟 Hosting a Website on IIS (Windows EC2)
 🪄 EC2 Launch Steps:
