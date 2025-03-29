@@ -1,6 +1,6 @@
 # DevOps Roadmap
 
-Welcome to the **DevOps Roadmap** repository! This guide aims to provide a comprehensive overview of the tools, technologies, and practices necessary to become a proficient DevOps Engineer.
+Welcome to the **DevOps Roadmap** ! This guide aims to provide a comprehensive overview of the tools, technologies, and practices necessary to become a proficient DevOps Engineer.
 ![devops](devops.png)
 
 Before you start, it's beneficial to have:
