@@ -82,10 +82,8 @@ UUID=abc123-xyz /mnt/data ext4 defaults,nofail 0 2
 ### 6. 🪟 Hosting a Website on IIS (Windows EC2)
 🪄 EC2 Launch Steps:
 - Choose Windows Server 2019/2022 Base
-- t2.micro
+- t3a.xlarge
 - Security Group: Allow RDP (3389) & HTTP (80)
-
-- 📜 PowerShell Script (for User Data or Run Manually)
 
 ```bash
 Install-WindowsFeature -name Web-Server -IncludeManagementTools
